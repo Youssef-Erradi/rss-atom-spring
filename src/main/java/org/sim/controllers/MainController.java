@@ -111,7 +111,7 @@ public class MainController {
 		entry.setAlternateLinks(Collections.singletonList(link));
 		author.setName("Mohamed Neddam");
 		entry.setAuthors(Collections.singletonList(author));
-		entry.setCreated(dateFormat.parse("06/02/2021 22:54"));
+		entry.setUpdated(dateFormat.parse("06/02/2021 22:54"));
 		entry.setId("58a116da3e144ac9ad27d7be4f1078ca");
 		entry.setTitle("Typing speed avec Javascript");
 
@@ -132,7 +132,7 @@ public class MainController {
 		entry.setAlternateLinks(Collections.singletonList(link));
 		author.setName("Youssef Erradi");
 		entry.setAuthors(Collections.singletonList(author));
-		entry.setCreated(dateFormat.parse("31/07/2021 19:20"));
+		entry.setUpdated(dateFormat.parse("31/07/2021 19:20"));
 		entry.setId("66963ea169234b7e8daf8a435618ba54");
 		entry.setTitle("Mini projet Javascript");
 
