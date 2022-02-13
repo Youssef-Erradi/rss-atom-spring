@@ -21,7 +21,6 @@ import com.rometools.rome.feed.atom.Link;
 import com.rometools.rome.feed.atom.Person;
 import com.rometools.rome.feed.rss.Channel;
 import com.rometools.rome.feed.rss.Description;
-import com.rometools.rome.feed.rss.Image;
 import com.rometools.rome.feed.rss.Item;
 import com.rometools.rome.feed.synd.SyndPerson;
 
@@ -38,15 +37,7 @@ public class MainController {
 		channel.setDescription("RSS Feed qui affiche quelques un de nos projets sur Github");
 		channel.setLink("https://github.com/Youssef-Erradi/rss-atom-example");
 
-		Image image = new Image();
-		image.setUrl("https://fpt.usmba.ac.ma/new/wp-content/uploads/2021/12/657657.png");
-		image.setTitle("Faculté Polydisciplinaire de Taza");
-		image.setHeight(32);
-		image.setWidth(32);
-		channel.setImage(image);
-
-		Date date = new Date();
-		channel.setPubDate(date);
+		channel.setPubDate(new Date());
 
 		dateFormat.setTimeZone(TimeZone.getTimeZone("Etc/GMT+0"));
 
