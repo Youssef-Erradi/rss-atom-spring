@@ -35,7 +35,7 @@ public class MainController {
 		channel.setFeedType("rss_2.0");
 		channel.setTitle("Exemple de RSS Feed 2.0");
 		channel.setDescription("RSS Feed qui affiche quelques un de nos projets sur Github");
-		channel.setLink("https://github.com/Youssef-Erradi/rss-atom-example");
+		channel.setLink("https://github.com/Youssef-Erradi/rss-atom-spring");
 
 		channel.setPubDate(new Date());
 
@@ -82,7 +82,7 @@ public class MainController {
 		Feed feed = new Feed();
 		feed.setFeedType("atom_1.0");
 		feed.setTitle("Exemple de Atom Feed 1.0");
-		feed.setId("https://github.com/Youssef-Erradi/rss-atom-example");
+		feed.setId("https://github.com/Youssef-Erradi/rss-atom-spring");
 
 		Content subtitle = new Content();
 		subtitle.setType("text/plain");
