@@ -80,9 +80,13 @@ public class MainController {
 	@GetMapping(path = "/atom")
 	public Feed atom() throws ParseException {
 		Feed feed = new Feed();
+		Link link = new Link();
+		link.setHref("https://github.com/Youssef-Erradi/rss-atom-spring");
+		
 		feed.setFeedType("atom_1.0");
 		feed.setTitle("Exemple de Atom Feed 1.0");
-		feed.setId("https://github.com/Youssef-Erradi/rss-atom-spring");
+		feed.setId("urn:uuid:ee0fd202-e340-40a5-85ec-af28c7b39ea6");		
+		feed.setAlternateLinks(Collections.singletonList(link));
 
 		Content subtitle = new Content();
 		subtitle.setType("text/plain");
@@ -93,7 +97,7 @@ public class MainController {
 		List<Entry> entries = new ArrayList<>();
 
 		Entry entry = new Entry();
-		Link link = new Link();
+		link = new Link();;
 		SyndPerson author = new Person();
 		Category category = new Category();
 		Content summary = new Content();
@@ -103,7 +107,7 @@ public class MainController {
 		author.setName("Mohamed Neddam");
 		entry.setAuthors(Collections.singletonList(author));
 		entry.setUpdated(dateFormat.parse("06/02/2021 22:54"));
-		entry.setId("58a116da3e144ac9ad27d7be4f1078ca");
+		entry.setId("urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6");
 		entry.setTitle("Typing speed avec Javascript");
 
 		category.setTerm("Front-end");
@@ -124,7 +128,7 @@ public class MainController {
 		author.setName("Youssef Erradi");
 		entry.setAuthors(Collections.singletonList(author));
 		entry.setUpdated(dateFormat.parse("31/07/2021 19:20"));
-		entry.setId("66963ea169234b7e8daf8a435618ba54");
+		entry.setId("urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a");
 		entry.setTitle("Mini projet Javascript");
 
 		category.setTerm("Front-end");
